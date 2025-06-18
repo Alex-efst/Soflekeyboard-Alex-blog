@@ -43,13 +43,13 @@ As Hexxor mentions (livestream), a good technique of soldering parts is:
 * Solder the other side with generous amount of tin to work as a physical support (I personally ended up doing both sides due to my inexperience and fear of having to troubleshoot later)
 
 ### Testing
-Here's where I needed a multimetter, it's roughly 0.56V.
-Initial, I couldn't get the multimetter to work for diode testing, I found out that you need to press a yellow button to alternate between modes (not mentioned in manual :<).
-Other common problem I had was that I put too much tin on the connections, so i ended up having to re-do them by marking them with tape ![IMG_20250616_203659](https://github.com/user-attachments/assets/4dc12f5d-e91d-4459-b070-7e79c2e5cf8d). 
+Here's where I needed a multimetter, it's roughly 0.56V.\
+Initial, I couldn't get the multimetter to work for diode testing, I found out that you need to press a yellow button to alternate between modes (not mentioned in manual :<).\
+Other common problem I had was that I put too much tin on the connections, so i ended up having to re-do them by marking them with tape ![IMG_20250616_203659](https://github.com/user-attachments/assets/4dc12f5d-e91d-4459-b070-7e79c2e5cf8d).\
 I even found 2 diodes that I placed with the wrong polarity.
 
 ## Sockets for switches
-You place them like this on the backside (same side as diodes) ![IMG_20250617_145052](https://github.com/user-attachments/assets/982a3324-0299-47dd-af40-ce67e678f3a5)
-Using the same technique as I did before (somewhat forgot and ended up remembering it again), it's somewhat more difficult as you're obstructed by the socket but with more generous amount of tin it's easier to glue on the pcb.
-Results were this, with me forgeting one thump socket Q_Q.
+You place them like this on the backside (same side as diodes) ![IMG_20250617_145052](https://github.com/user-attachments/assets/982a3324-0299-47dd-af40-ce67e678f3a5)\
+Using the same technique as I did before (somewhat forgot and ended up remembering it again), it's somewhat more difficult as you're obstructed by the socket but with more generous amount of tin it's easier to glue on the pcb.\
+Results were this, with me forgeting one thump socket Q_Q.\
 ![IMG_20250617_181903](https://github.com/user-attachments/assets/d2d082b4-67a9-4b3a-af9c-303ca0971dd1)
