@@ -1,8 +1,8 @@
 # Soflekeyboard-Alex-blog
-This a blog style documentation of how I built my first split keyboard Sofle v1.
+This a blog style documentation of how I built my first split keyboard Sofle v2.
 
 # Introduction & Motivation
-I decided I'll document my attempt at building a Sofle v1 because I found very few people document their progress in details, which lead me to have very little reference to comapre to and guide myself through on how to build this. To be fair, there's a guide [you should definitely read](https://josefadamcik.github.io/SofleKeyboard/build_guide.html) but I found it lacking for somebody who has 0 prior knowledge on building electronics and it won't show hurdles you might face.
+I decided I'll document my attempt at building a Sofle v2 because I found very few people document their progress in details, which lead me to have very little reference to comapre to and guide myself through on how to build this. To be fair, there's a guide [you should definitely read](https://josefadamcik.github.io/SofleKeyboard/build_guide.html) but I found it lacking for somebody who has 0 prior knowledge on building electronics and it won't show hurdles you might face.
 This my first PCB soldering and my first attempt at working with soldering iron was trying to fix my audio cable for my speakers.
 
 # Preparation 
@@ -28,6 +28,10 @@ Later on I got an small upgrade
 * Solder wick braid, which I did use with some flux from the kit
 ![IMG_20250617_140953](https://github.com/user-attachments/assets/bafbfd5d-ab96-4960-8380-29f88d63b3af)
 
+## DIY Kit
+https://shop.beekeeb.com/product/sofle-v2-soflekeyboard-v2-0-1-split-ergonomic-diy-mechanical-keyboard-pcb-kit/
+https://joshajohnson.com/sea-picro/ (Will need this later for Firmware, QMK set up)
+
 # Building
 I'm gonna use a very common quote and one mentioned on the guide.
 > _**Think twice, solder once**. Desoldering is frustrating and it’s easy to mess up things._
@@ -45,11 +49,36 @@ As Hexxor mentions (livestream), a good technique of soldering parts is:
 ### Testing
 Here's where I needed a multimetter, it's roughly 0.56V.\
 Initial, I couldn't get the multimetter to work for diode testing, I found out that you need to press a yellow button to alternate between modes (not mentioned in manual :<).\
-Other common problem I had was that I put too much tin on the connections, so i ended up having to re-do them by marking them with tape ![IMG_20250616_203659](https://github.com/user-attachments/assets/4dc12f5d-e91d-4459-b070-7e79c2e5cf8d).\
-I even found 2 diodes that I placed with the wrong polarity.
+Other common problem I had was that I put too much tin on the connections, so i ended up having to re-do them by marking them with tape, may have not been necessary but I wanted to do it ![IMG_20250616_203659](https://github.com/user-attachments/assets/4dc12f5d-e91d-4459-b070-7e79c2e5cf8d).\
+I did found 2 diodes tho with the wrong polarity.
 
 ## Sockets for switches
 You place them like this on the backside (same side as diodes) ![IMG_20250617_145052](https://github.com/user-attachments/assets/982a3324-0299-47dd-af40-ce67e678f3a5)\
 Using the same technique as I did before (somewhat forgot and ended up remembering it again), it's somewhat more difficult as you're obstructed by the socket but with more generous amount of tin it's easier to glue on the pcb.\
 Results were this, with me forgeting one thump socket Q_Q.\
 ![IMG_20250617_181903](https://github.com/user-attachments/assets/d2d082b4-67a9-4b3a-af9c-303ca0971dd1)
+
+##Firmware
+Dies Q_Q
+QMK
+Master & slave keyboard concept, didn't know, ended up confusing me initially as I thought I place the MCU wrong (Micro Controller Unit // the small rectangular PCB).
+Ended up skipping a step because I thought I didn't need it (I did)
+QMK Toolbox not working with Sea Picro
++++ more to add
+
+
+# Troubleshoot
+Combination of googling and https://docs.splitkb.com/troubleshooting which I found by the end. It has some really [good practices](https://docs.splitkb.com/resources/soldering/healthy-joints) for soldering too which I highly recommend to have a look at.
+
+## Problems Encounter
+* Reverse placement of switch sockets
+ * Thought it wouldn't let you get it wrong but no, it obstructes the switch hole to attach itself on PCB
+* Reverse placement of one of the rotatary encoders
+ * Wasn't pay attention for 1min and wasted 2 days + 2€ for new encoder
+* Short diodes to socket
+ * it kept spamming "e" on one of the boards, so I found E on the [keymap](https://config.qmk.fm/#/sofle/rev1/LAYOUT) and saw my bad joint)
+* 2 Diodes with reverse polarity
+* 
+* 
+* 
+
