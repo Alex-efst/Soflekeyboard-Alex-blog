@@ -55,7 +55,7 @@ I did found 2 diodes tho with the wrong polarity.
 ## Sockets for switches
 You place them like this on the backside (same side as diodes) ![IMG_20250617_145052](https://github.com/user-attachments/assets/982a3324-0299-47dd-af40-ce67e678f3a5)\
 Using the same technique as I did before (somewhat forgot and ended up remembering it again), it's somewhat more difficult as you're obstructed by the socket but with more generous amount of tin it's easier to glue on the pcb.\
-Results were this, with me forgeting one thump socket Q_Q.\
+Results were this, with me forgeting one thump socket and having reversed quite a lot of the sockets but overall acceptable results.\
 ![IMG_20250617_181903](https://github.com/user-attachments/assets/d2d082b4-67a9-4b3a-af9c-303ca0971dd1)
 
 ##Firmware
@@ -73,12 +73,12 @@ Combination of googling and https://docs.splitkb.com/troubleshooting which I fou
 ## Problems Encounter
 * Reverse placement of switch sockets
  * Thought it wouldn't let you get it wrong but no, it obstructes the switch hole to attach itself on PCB
-* Reverse placement of one of the rotatary encoders
+* Reverse placement of one of the rotatary encoders (bottom side)
  * Wasn't pay attention for 1min and wasted 2 days + 2€ for new encoder
 * Short diodes to socket
  * it kept spamming "e" on one of the boards, so I found E on the [keymap](https://config.qmk.fm/#/sofle/rev1/LAYOUT) and saw my bad joint)
 * 2 Diodes with reverse polarity
-* 
+* Short on MCU, very fun reading schematics /s
 * 
 * 
 
